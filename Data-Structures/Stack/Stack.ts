@@ -59,15 +59,4 @@ class Stack<T> extends StackHelper<T> implements StackClass<T> {
   }
 }
 
-const stack = new Stack<number>();
-
-console.log(stack.push(1)); // [1]
-console.log(stack.push(2, 3)); // [1, 2, 3]
-console.log(stack.print()); // 1, 2, 3
-console.log(stack.peek()); // 3
-console.log(stack.pop()); // 3
-console.log(stack.pop()); // 2
-console.log(stack.size()); // 1
-console.log(stack.pop()); // 1
-console.log(stack.isEmpty()); // true
-console.log(stack.print()); // undefined
+export default Stack;
