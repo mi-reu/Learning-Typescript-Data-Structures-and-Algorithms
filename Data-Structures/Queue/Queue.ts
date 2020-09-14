@@ -6,7 +6,7 @@ class QueueHelper<T> {
   }
 
   print() {
-    console.log(this.items.toString());
+    console.log(JSON.stringify(this.items));
   }
 }
 
