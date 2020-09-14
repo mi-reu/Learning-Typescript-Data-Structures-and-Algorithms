@@ -1,19 +1,4 @@
-interface StackClass<T> {
-  items: T[];
-  push: (item: T, ...args: T[]) => void;
-  pop: () => T;
-  peek: () => T;
-  isEmpty: () => boolean;
-  size: () => number;
-  clear: () => void;
-}
-
-interface StackHelperClass<T> {
-  items: T[];
-  print: () => void;
-}
-
-class StackHelper<T> implements StackHelperClass<T> {
+class StackHelper<T> {
   items: T[];
 
   constructor() {
@@ -25,7 +10,7 @@ class StackHelper<T> implements StackHelperClass<T> {
   }
 }
 
-class Stack<T> extends StackHelper<T> implements StackClass<T> {
+class Stack<T> extends StackHelper<T> {
   items: T[];
 
   constructor() {
@@ -34,8 +19,8 @@ class Stack<T> extends StackHelper<T> implements StackClass<T> {
     this.items = [];
   }
 
-  push(item: T, ...args: T[]) {
-    this.items.push(item, ...args);
+  push(element: T, ...args: T[]) {
+    this.items.push(element, ...args);
   }
 
   pop() {

@@ -1,13 +1,3 @@
-interface QueueClass<T> {
-  items: T[];
-  enqueue: (item: T, ...args: T[]) => void;
-  dequeue: () => T;
-  front: () => T;
-  isEmpty: () => boolean;
-  size: () => number;
-  clear: () => void;
-}
-
 class QueueHelper<T> {
   items: T[];
 
@@ -20,7 +10,7 @@ class QueueHelper<T> {
   }
 }
 
-class Queue<T> extends QueueHelper<T> implements QueueClass<T> {
+class Queue<T> extends QueueHelper<T> {
   items: T[];
 
   constructor() {
@@ -29,8 +19,8 @@ class Queue<T> extends QueueHelper<T> implements QueueClass<T> {
     this.items = [];
   }
 
-  enqueue(item: T, ...args: T[]) {
-    this.items.push(item, ...args);
+  enqueue(element: T, ...args: T[]) {
+    this.items.push(element, ...args);
   }
 
   dequeue() {
