@@ -2,7 +2,7 @@
 
 ## 정의
 
-스택<sub>stack</sub>은 LIFO<sub>Last In First Out</sub>(후입선출)원리에 따라 정렬된 컬렉션이다.
+스택<sub>Stack</sub>은 LIFO<sub>Last In First Out</sub>(후입선출)원리에 따라 정렬된 컬렉션이다.
 
 ## 메서드
 

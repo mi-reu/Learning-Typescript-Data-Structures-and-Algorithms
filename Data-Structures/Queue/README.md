@@ -2,7 +2,7 @@
 
 ## 정의
 
-큐<sub>queue</sub>은 FIFO<sub>First In First Out</sub>(선입선출)원리에 따라 정렬된 컬렉션이다.
+큐<sub>Queue</sub>은 FIFO<sub>First In First Out</sub>(선입선출)원리에 따라 정렬된 컬렉션이다.
 
 ## 메서드
 
