@@ -6,9 +6,9 @@
 
 ## 메서드
 
-Queue 와 동일(단, enqueue 메서드의 경우 내부 로직이 다르다.)
+큐<sub>queue</sub>와 동일(단, enqueue 메서드의 경우 내부 로직이 다르다.)
 
-## 타입스크립트로 큐 구현하기
+## 타입스크립트로 우선순위 큐 구현하기
 
 ```TS
 interface QueueElement<T> {
